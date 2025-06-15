@@ -1,28 +1,50 @@
-# 🌲 Cypress, do Zero à Nuvem ☁️
+🧪 Cypress - Projeto de Testes Automatizados
+Este é um projeto de testes automatizados end-to-end desenvolvido com o Cypress, como parte do curso “Cypress do Zero à Nuvem” da escola Talking About Testing.
+Ele automatiza os testes da aplicação Central de Atendimento ao Cliente TAT (CAC TAT).
 
-👋 Seja bem-vindo(a)!
+✅ Pré-requisitos
+Antes de iniciar, você precisa ter os seguintes softwares instalados em sua máquina:
 
-É muito bom tê-lo(a) aqui. Tenho certeza que você vai amar esse curso. ❤️
+Node.js (versão 16 ou superior recomendada)
 
-## O que você vai aprender?
+npm (gerenciador de pacotes que já vem com o Node.js)
 
-- Como configurar um projeto Cypress do zero
-- Como visitar páginas locais e remotas
-- Como lidar com os elementos mais comuns encontrados em aplicações web
-- Como testar upload de arquivos
-- Como realizar as mais diversas verificações de resultados esperados
-- Como criar comandos customizados
-- Como lidar com links que abrem em outra aba do navegador
-- Como rodar testes simulando as dimensões de um dispositivo móvel
-- Como resolver os mesmos problemas de diferentes formas, conhecendo a [API do Cypress](https://docs.cypress.io/api/table-of-contents)
-- Como criar uma documentação mínima para seu projeto de testes automatizados
-- Como executar os testes em um _workflow_ de integração contínua sempre que mudanças ocorrerem no código da aplicação (ou dos testes)
-- Como integrar seu _workflow_ de integração contínua com o Cypress Cloud (o serviço de gestão de testes do Cypress na nuvem)
+Git (para clonar o projeto)
 
-## Vamos começar?
+Visual Studio Code (opcional, mas recomendado)
 
-Vá para a seção [estrutura do curso](./lessons/_course-structure_.md).
+⚙️ Instalação do Projeto
+Clone o repositório:
 
-___
+bash
+Copiar
+Editar
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
+Instale as dependências:
 
-Este é um curso da **Escola Talking About Testing**.
+
+📁 Estrutura do curso
+cypress-do-zero-a-nuvem/
+├── cypress/
+│   ├── e2e/
+│   │   ├── CAC-TAT.cy.js         # Testes do formulário principal
+│   │   └── privacyPolicy.cy.js   # Testes da página de política de privacidade
+│   ├── fixtures/                 # (opcional) dados mockados
+│   ├── support/                  # comandos personalizados
+├── src/
+│   ├── index.html
+│   ├── privacy.html
+├── package.json
+├── cypress.config.js
+└── README.md
+📌 Informações Adicionais
+Os testes utilizam comandos personalizados e boas práticas ensinadas durante o curso.
+
+Os testes de mobile utilizam viewportWidth=410 e viewportHeight=860.
+
+O projeto pode ser estendido com testes para diferentes navegadores ou CI/CD.
+
+👨‍💻 Autor
+Carlos Eduardo Pereira Pedroza
+📧 carloseduardo391@hotmail.com
